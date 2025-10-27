@@ -7,7 +7,7 @@ import { useEffect, useState, Suspense } from "react";
 import { Zap, Shield, Clock, Users, Star, ArrowRight, X } from "lucide-react";
 import SearchParamsHandler from "@/components/SearchParamsHandler";
 import { AdminAccessButton } from "@/components/admin/AdminAccessButton";
-import { TestNotificationButton } from "@/components/test/TestNotificationButton";
+
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -702,7 +702,6 @@ export default function Home() {
           </div>
           </div>
       )}
-      <TestNotificationButton />
     </main>
   );
 }
